@@ -31,12 +31,17 @@
     font-size: 20px;
 }
 
+.navbar a:hover{
+    color: white;
+}
+
 /* Estilos del header */
 
 /*   Estilos generales   */
 
 h1{
     font-size: 40px;
+    text-align: center;
 }
 
 h2{
@@ -45,16 +50,19 @@ h2{
     font-size: 28px;
     word-spacing: 5px;
     font-weight: 500;
+    text-align: center;
 }
 
 h3{
     margin-bottom: 30px;
     font-size: 20px;
+    text-align: center;
 }
 
 h4{
     font-size: 20px;
     color: #21274F;
+    text-align: center;
 }
 
 /*   Estilos generales   */
@@ -166,6 +174,9 @@ main{
 
 .skillsicons {
     margin-bottom: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 @media (max-width: 576px) {
@@ -174,14 +185,6 @@ main{
     }  
 }
 
-@media screen and (max-width: 576px) {
-    .perfil{
-        visibility:hidden;
-        /* No se cómo hacer que no ocupe espacio en version mobile */
-    }
-}
-
-
 /* Estilos de habilidades */
 
 /* Estilos de perfil */
@@ -189,22 +192,27 @@ main{
 .perfil{
     background-color: #FCEBEA;
     width: 50%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding-top: 20px;
+    display: block;
+    /* flex-flow: row wrap;
+    justify-content: center; */
 }
 
 .perfil h4{
-    width: 80%;
-    text-align: center;
+    width: 100%;
 }
 
 .perfil p{
     font-size: 18px;
-    color: #21274F;
-    width: 80%;
+    width: 100%;
     text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .perfil{
+        /* visibility:hidden; */
+        display: none;
+        /* No se cómo hacer que no ocupe espacio en version mobile */
+    }
 }
 
 /* Estilos de perfil */
@@ -243,46 +251,37 @@ footer p{
 
 /*   Estilos del resumen   */
 
-.formacion{
+.resumen{
     background-color: #FCEBEA;
-    background-image: none;
-    height: 820px;
-    width: 50%;
-    padding: 60px;
+    padding-top: 5%;
     color: #21274F;
-    display: inline-block; 
 }
 
-.formacion h2{
-    color: #21274F;
-    text-align: left;
-    margin-top: 30px;
+.resumen h2{
+    text-align: start;
+    margin-top: 3%;
+} 
+
+.resumen h4{
+    text-align: start;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
-.formacion h4{
-    margin: 10px 0px;
+.formacion{ 
+    padding-left: 5%;
+} 
+
+.formacion p{
+    margin: 0;
 }
+
 
 .experiencia{
-    padding: 60px;
-    height: 820px;
-    width: 50%;
-    float: right;
-    color: #21274F;
-}
-
-.experiencia h2{
-    color: #21274F;
-    text-align: left;
-    margin-top: 30px;
-}
-
-.experiencia h4{
-    margin: 10px 0px;
+    padding-right: 5%;
 }
 
 .experiencia p{
-    margin-bottom: 40px;
     text-align: justify;
 }
 
@@ -298,48 +297,58 @@ footer p{
     color: #F4C0B8;
 }
 
+.botdescarga{
+    margin-bottom: 40px;
+}
+
 /*   Estilos del resumen   */
 
 /*   Estilos del portafolio   */
 
-.titleporta h1{
-    text-align: center;
-    background-color: #FCEBEA;
-    height: 160px;
-    width: 100%;
-    padding: 90px 0px 0px 10px;
-    color: #21274F;
+.titleporta{
+    padding-top: 6%;
 }
 
-.portafolio{
+.contenedorportfolioa{
+    display: flex;
+    flex-flow: row wrap;
     background-color: #FCEBEA;
-    height: 700px;
+}
+
+.contenedorportfoliob{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    background-color: #FCEBEA;
+}
+
+.contenedorportfolioprueba{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.porttitle{
     width: 50%;
-    color: #21274F;
-    display: inline-block;
+    padding: 2% 5% 0 5%;
+    height: 100px;
 }
 
-.portafolio h2{
-    text-align: left;
-    margin-left: 50px;
+.porttext{
+    width: 50%;
+    padding: 2% 5%;
 }
 
-.portafolio h4{
-    margin: 30px 0px 0px 50px;
+.porttext p{
+    text-align: justify;
 }
 
-.portafolio p{
-    margin-left: 50px;
-    margin-bottom: 30px;
+.portbotleft{
+    display: flex;
+    justify-content: flex-end;
 }
 
-.portafolio div{
-    float: right;
-    margin: 20px;
-}
-
-.portafolio a:hover{
-    color: #F4C0B8;
+.portbotright{
+    display: flex;
+    justify-content: flex-start;
 }
 
 .boton1{
@@ -360,44 +369,48 @@ footer p{
     margin: 0px 5px;
 }
 
-.portafolio img{
-    margin: 40px;
-}
-
-.portafolioizq{
-    background-color: #FCEBEA;
-    height: 700px;
-    width: 50%;
-    color: #21274F;
-    float: right;
-}
-
-.portafolioizq img{
-    margin-left: 20px;
-    margin-bottom: 40px;
-}
-
-.portafolioizq h2{
-    text-align: left;
-    margin-left: 50px;
-}
-
-.portafolioizq h4{
-    margin: 30px 0px 0px 50px;
-}
-
-.portafolioizq p{
-    margin-left: 50px;
-    margin-bottom: 30px;
-}
-
-.portafolioizq a:hover{
+.porttext a:hover{
     color: #F4C0B8;
 }
 
-.portafolioizq div{
-    float: left;
-    margin: 20px 20px 20px 40px;
+.portimgright{
+    width: 50%;
+    padding: 2% 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.portimgleft{
+    width: 50%;
+    padding: 2% 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 576px) {
+    .porttext{
+        width: 100%;
+    }
+    .portimgleft{
+        width: 100%;
+        justify-content: center;
+    }
+    .portimgright{
+        width: 100%;
+        justify-content: center;
+    }
+    .portbotleft{
+        display: flex;
+        justify-content: center;
+    }
+    .portbotright{
+        display: flex;
+        justify-content: center;
+    }
+    .porttitle{
+        width: 100%;
+    }
+    
 }
 
 /*   Estilos del portafolio   */
