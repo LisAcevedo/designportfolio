@@ -1,0 +1,501 @@
+// Paleta de colores //
+$colorbase: #FCEBEA
+$colorenfocus1: #F4C0B8
+$colorcontraste1: #21274F
+$colorcontraste2: white
+$colorcontraste3: #F5ACA6
+// Paleta de colores //
+
+// Tipografías //
+$fontprincipal: 'Quicksand', sans-serif
+// Tipografías //
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: $fontprincipal, sans-serif
+    
+
+
+/* Estilos del header */
+
+.navbar
+    background-color: $colorenfocus1
+
+
+.navbar-brand
+    background-color: $colorcontraste1
+    border-radius: 16px
+    color: $colorcontraste2
+    letter-spacing: 3px
+    padding: 5px 15px
+
+
+.collapse
+    display: flex
+    justify-content: flex-end
+
+
+.nav-link
+    color: $colorcontraste1
+    margin: 0px 20px
+    font-size: 20px
+
+
+.navbar a:hover
+    color: $colorcontraste2
+
+
+/* Estilos del header */
+
+/*   Estilos generales   */
+
+h1
+    font-size: 40px
+    text-align: center
+
+
+h2
+    color: $colorcontraste3
+    margin-bottom: 20px
+    font-size: 28px
+    word-spacing: 5px
+    font-weight: 500
+    text-align: center
+
+
+h3
+    margin-bottom: 30px
+    font-size: 20px
+    text-align: center
+
+
+h4
+    font-size: 20px
+    color: $colorcontraste1
+    text-align: center
+
+
+/*   Estilos generales   */
+
+/* Estilos del main */
+
+.contenedorhome
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    align-items: center
+
+
+main
+    background-color: $colorbase
+
+
+.principalimage
+    width: 50%
+    margin-top: 5%
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+
+
+.imagenhome
+    width: 75%
+    height: auto
+    padding: 8px 0
+
+
+.principaltext
+    color: $colorcontraste1
+    display: flex
+    flex-flow: row wrap
+    width: 50%
+    justify-content: center
+    margin-top: 5%
+
+    h3
+        width: 100%
+        text-align: center
+    
+    
+    a
+        background-color: $colorcontraste1
+        color: $colorcontraste2
+        text-decoration: none
+        padding: 10px 20px
+        border-radius: 10px
+    
+
+    a:hover
+        color: $colorenfocus1
+    
+
+    p
+        margin-top: 20px
+        width: 80%
+        font-size: 18px
+        text-align: justify
+    
+
+
+@media (max-width: 576px) 
+    .principalimage
+        width: 100%
+        margin-top: 15%
+    
+    .principaltext
+        width: 100%
+    
+
+
+@media (max-width: 1000px) and (min-width: 575px) 
+    .principaltext
+        margin-top: 80px
+    
+
+
+/* Estilos del main */
+
+/* Estilos de habilidades y perfil */
+
+.contenedorskills
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    align-items: center
+    background-color: $colorbase
+
+
+/* Estilos de habilidades y perfil */
+
+/* Estilos de habilidades */
+
+.skills
+    background-color: $colorbase
+    width: 50%
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    padding-top: 20px
+
+    img
+        padding: 8px
+    
+
+
+.skillsicons 
+    margin-bottom: 24px
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+
+
+@media (max-width: 576px) 
+    .skills
+        width: 100%
+      
+
+
+/* Estilos de habilidades */
+
+/* Estilos de perfil */
+
+.perfil
+    background-color: $colorbase
+    width: 50%
+    display: block
+
+    h4
+        width: 100%
+    
+
+    p
+        font-size: 18px
+        width: 100%
+        text-align: center
+    
+
+
+@media screen and (max-width: 576px) 
+    .perfil
+        display: none
+    
+
+
+/* Estilos de perfil */
+
+/* Estilos de footer */
+
+footer
+    background-color: $colorcontraste1
+    height: 50px
+    text-align: center
+    padding: 12px
+
+    p
+        color: $colorcontraste2
+        font-size: 16px
+        word-spacing: 3px
+        letter-spacing: 3px
+        display: inline-block
+        background-color: $colorcontraste1
+    
+
+
+.redes
+    color: $colorcontraste2
+    background-color: $colorcontraste1
+    display: inline-block
+
+    i
+        padding: 0 5px
+        font-size: 18px
+        background-color: $colorcontraste1
+    
+
+
+/* Estilos de footer */
+
+/*   Estilos del resumen   */
+
+.resumen
+    background-color: $colorbase
+    padding-top: 5%
+    color: $colorcontraste1
+
+    h2
+        text-align: start
+        margin-top: 3%
+    
+
+    h4
+        text-align: start
+        font-weight: 600
+        margin-top: 10px
+    
+
+
+.formacion 
+    padding-left: 5%
+
+    p
+        margin: 0
+    
+ 
+
+.experiencia
+    padding-right: 5%
+
+    p
+        text-align: justify
+    
+
+    a
+        text-decoration: none
+        color: $colorcontraste2
+        padding: 8px 30px
+        background-color: $colorcontraste1
+        border-radius: 10px
+    
+
+    a:hover
+        color: $colorenfocus1
+    
+
+
+.botdescarga
+    margin-bottom: 40px
+
+
+/*   Estilos del resumen   */
+
+/*   Estilos del portafolio   */
+
+.titleporta
+    padding-top: 6%
+
+
+.contenedorportfolioa
+    display: flex
+    flex-flow: row wrap
+    background-color: $colorbase
+
+
+.contenedorportfoliob
+    display: flex
+    flex-flow: row-reverse wrap
+    background-color: $colorbase
+
+
+.contenedorportfolioprueba
+    display: flex
+    flex-flow: row wrap
+
+
+.porttitle
+    width: 50%
+    padding: 2% 5% 0 5%
+    height: 100px
+
+
+.porttext
+    width: 50%
+    padding: 2% 5%
+
+    p
+        text-align: justify
+    
+
+    a:hover
+        color: $colorenfocus1
+    
+
+
+.portbotleft
+    display: flex
+    justify-content: flex-end
+
+
+.portbotright
+    display: flex
+    justify-content: flex-start
+
+
+.boton1
+    color: $colorcontraste1
+    padding: 4px 10px
+    border: 1px solid $colorcontraste1
+    text-decoration: none
+    border-radius: 10px
+    margin: 0px 5px
+
+
+.boton2
+    color: $colorcontraste2
+    background-color: $colorcontraste1
+    padding: 4px 10px
+    text-decoration: none
+    border-radius: 10px
+    margin: 0px 5px
+
+
+.portimgright
+    width: 50%
+    padding: 2% 0
+    display: flex
+    justify-content: flex-start
+
+
+.portimgleft
+    width: 50%
+    padding: 2% 0
+    display: flex
+    justify-content: flex-end
+
+
+@media (max-width: 576px) 
+    .porttext
+        width: 100%
+    
+    .portimgleft
+        width: 100%
+        justify-content: center
+    
+    .portimgright
+        width: 100%
+        justify-content: center
+    
+    .portbotleft
+        display: flex
+        justify-content: center
+    
+    .portbotright
+        display: flex
+        justify-content: center
+    
+    .porttitle
+        width: 100%
+    
+    
+
+
+/*   Estilos del portafolio   */
+
+/*   Estilos del reel   */
+
+.reel 
+    background-color: $colorbase
+    height: 1000px
+    width: 100%
+    padding: 60px 0px
+    color: $colorcontraste1
+
+    h1
+        margin: 30px auto
+    
+
+    h4
+        margin-left: 50px
+        margin-top: 20px
+    
+    
+    video
+        margin: 0px 50px
+    
+
+    p
+        margin: 30px 100px
+        text-align: justify
+    
+
+
+/*   Estilos del reel   */
+
+/*   Estilos del contacto   */
+
+.contacto
+    background-color: $colorbase
+    background-image: none
+    height: 500px
+    width: 50%
+    padding: 60px
+    color: $colorcontraste1
+    display: inline-block 
+
+    ul
+        list-style: none
+        font-size: 18px
+    
+
+    li
+        margin: 10px 0px
+    
+
+
+.h5
+    color: $colorcontraste1
+
+
+.formulario
+    padding: 60px
+    height: 500px
+    width: 50%
+    float: right
+    color: $colorcontraste1
+
+    p
+        margin-bottom: 30px
+    
+
+    .botones
+        float: right
+        padding-top: 15px
+    
+
+
+.completo 
+    width: 100%
+
+
+/*   Estilos del contacto   */

@@ -1,21 +1,33 @@
+// Paleta de colores //
+$colorbase: #FCEBEA;
+$colorenfocus1: #F4C0B8;
+$colorcontraste1: #21274F;
+$colorcontraste2: white;
+$colorcontraste3: #F5ACA6;
+// Paleta de colores //
+
+// Tipografías //
+$fontprincipal: 'Quicksand', sans-serif;
+// Tipografías //
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: $fontprincipal, sans-serif;
     
 }
 
 /* Estilos del header */
 
 .navbar{
-    background-color: #F4C0B8;
+    background-color: $colorenfocus1;
 }
 
 .navbar-brand{
-    background-color: #21274F;
+    background-color: $colorcontraste1;
     border-radius: 16px;
-    color: white;
+    color: $colorcontraste2;
     letter-spacing: 3px;
     padding: 5px 15px;
 }
@@ -26,13 +38,13 @@
 }
 
 .nav-link{
-    color: #21274F;
+    color: $colorcontraste1;
     margin: 0px 20px;
     font-size: 20px;
 }
 
 .navbar a:hover{
-    color: white;
+    color: $colorcontraste2;
 }
 
 /* Estilos del header */
@@ -45,7 +57,7 @@ h1{
 }
 
 h2{
-    color: #F5ACA6;
+    color: $colorcontraste3;
     margin-bottom: 20px;
     font-size: 28px;
     word-spacing: 5px;
@@ -61,7 +73,7 @@ h3{
 
 h4{
     font-size: 20px;
-    color: #21274F;
+    color: $colorcontraste1;
     text-align: center;
 }
 
@@ -77,7 +89,7 @@ h4{
 }
 
 main{
-    background-color: #FCEBEA;
+    background-color: $colorbase;
 }
 
 .principalimage{
@@ -95,36 +107,36 @@ main{
 }
 
 .principaltext{
-    color: #21274F;
+    color: $colorcontraste1;
     display: flex;
     flex-flow: row wrap;
     width: 50%;
     justify-content: center;
     margin-top: 5%;
-}
 
-.principaltext h3{
+    h3{
         width: 100%;
         text-align: center;
-}
+    }
+    
+    a{
+        background-color: $colorcontraste1;
+        color: $colorcontraste2;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
 
-.principaltext a{
-    background-color: #21274F;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-}
+    a:hover{
+        color: $colorenfocus1;
+    }
 
-.principaltext a:hover{
-    color: #F4C0B8;
-}
-
-.principaltext p{
-    margin-top: 20px;
-    width: 80%;
-    font-size: 18px;
-    text-align: justify;
+    p{
+        margin-top: 20px;
+        width: 80%;
+        font-size: 18px;
+        text-align: justify;
+    }
 }
 
 @media (max-width: 576px) {
@@ -152,7 +164,7 @@ main{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    background-color: #FCEBEA;
+    background-color: $colorbase;
 }
 
 /* Estilos de habilidades y perfil */
@@ -160,16 +172,16 @@ main{
 /* Estilos de habilidades */
 
 .skills{
-    background-color: #FCEBEA;
+    background-color: $colorbase;
     width: 50%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     padding-top: 20px;
-}
 
-.skills img{
-    padding: 8px;
+    img{
+        padding: 8px;
+    }
 }
 
 .skillsicons {
@@ -190,28 +202,24 @@ main{
 /* Estilos de perfil */
 
 .perfil{
-    background-color: #FCEBEA;
+    background-color: $colorbase;
     width: 50%;
     display: block;
-    /* flex-flow: row wrap;
-    justify-content: center; */
-}
 
-.perfil h4{
-    width: 100%;
-}
+    h4{
+        width: 100%;
+    }
 
-.perfil p{
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
+    p{
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .perfil{
-        /* visibility:hidden; */
         display: none;
-        /* No se cómo hacer que no ocupe espacio en version mobile */
     }
 }
 
@@ -220,31 +228,31 @@ main{
 /* Estilos de footer */
 
 footer{
-    background-color: #21274F;
+    background-color: $colorcontraste1;
     height: 50px;
     text-align: center;
     padding: 12px;
-}
 
-footer p{
-    color: white;
-    font-size: 16px;
-    word-spacing: 3px;
-    letter-spacing: 3px;
-    display: inline-block;
-    background-color: #21274F;
+    p{
+        color: $colorcontraste2;
+        font-size: 16px;
+        word-spacing: 3px;
+        letter-spacing: 3px;
+        display: inline-block;
+        background-color: $colorcontraste1;
+    }
 }
 
 .redes{
-    color: white;
-    background-color: #21274F;
+    color: $colorcontraste2;
+    background-color: $colorcontraste1;
     display: inline-block;
-}
 
-.redes i{
-    padding: 0 5px;
-    font: 18px;
-    background-color: #21274F;
+    i{
+        padding: 0 5px;
+        font-size: 18px;
+        background-color: $colorcontraste1;
+    }
 }
 
 /* Estilos de footer */
@@ -252,49 +260,48 @@ footer p{
 /*   Estilos del resumen   */
 
 .resumen{
-    background-color: #FCEBEA;
+    background-color: $colorbase;
     padding-top: 5%;
-    color: #21274F;
-}
+    color: $colorcontraste1;
 
-.resumen h2{
-    text-align: start;
-    margin-top: 3%;
-} 
+    h2{
+        text-align: start;
+        margin-top: 3%;
+    }
 
-.resumen h4{
-    text-align: start;
-    font-weight: 600;
-    margin-top: 10px;
+    h4{
+        text-align: start;
+        font-weight: 600;
+        margin-top: 10px;
+    }
 }
 
 .formacion{ 
     padding-left: 5%;
+
+    p{
+        margin: 0;
+    }
 } 
-
-.formacion p{
-    margin: 0;
-}
-
 
 .experiencia{
     padding-right: 5%;
-}
 
-.experiencia p{
-    text-align: justify;
-}
+    p{
+        text-align: justify;
+    }
 
-.experiencia a{
-    text-decoration: none;
-    color: white;
-    padding: 8px 30px;
-    background-color: #21274F;
-    border-radius: 10px;
-}
+    a{
+        text-decoration: none;
+        color: $colorcontraste2;
+        padding: 8px 30px;
+        background-color: $colorcontraste1;
+        border-radius: 10px;
+    }
 
-.experiencia a:hover{
-    color: #F4C0B8;
+    a:hover{
+        color: $colorenfocus1;
+    }
 }
 
 .botdescarga{
@@ -312,13 +319,13 @@ footer p{
 .contenedorportfolioa{
     display: flex;
     flex-flow: row wrap;
-    background-color: #FCEBEA;
+    background-color: $colorbase;
 }
 
 .contenedorportfoliob{
     display: flex;
     flex-flow: row-reverse wrap;
-    background-color: #FCEBEA;
+    background-color: $colorbase;
 }
 
 .contenedorportfolioprueba{
@@ -335,10 +342,14 @@ footer p{
 .porttext{
     width: 50%;
     padding: 2% 5%;
-}
 
-.porttext p{
-    text-align: justify;
+    p{
+        text-align: justify;
+    }
+
+    a:hover{
+        color: $colorenfocus1;
+    }
 }
 
 .portbotleft{
@@ -352,25 +363,21 @@ footer p{
 }
 
 .boton1{
-    color: #21274F;
-    border: 1px solid #21274F;
+    color: $colorcontraste1;
     padding: 4px 10px;
+    border: 1px solid $colorcontraste1;
     text-decoration: none;
     border-radius: 10px;
     margin: 0px 5px;
 }
 
 .boton2{
-    color: white;
-    background-color: #21274F;
+    color: $colorcontraste2;
+    background-color: $colorcontraste1;
     padding: 4px 10px;
     text-decoration: none;
     border-radius: 10px;
     margin: 0px 5px;
-}
-
-.porttext a:hover{
-    color: #F4C0B8;
 }
 
 .portimgright{
@@ -418,55 +425,56 @@ footer p{
 /*   Estilos del reel   */
 
 .reel {
-    background-color: #FCEBEA;
+    background-color: $colorbase;
     height: 1000px;
     width: 100%;
     padding: 60px 0px;
-    color: #21274F;
+    color: $colorcontraste1;
+
+    h1{
+        margin: 30px auto;
+    }
+
+    h4{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    video{
+        margin: 0px 50px;
+    }
+
+    p{
+        margin: 30px 100px;
+        text-align: justify;
+    }
 }
 
-.reel h1{
-    margin: 30px auto;
-}
-
-.reel h4{
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-.reel video{
-    margin: 0px 50px;
-}
-
-.reel p {
-    margin: 30px 100px;
-    text-align: justify;
-}
 /*   Estilos del reel   */
 
 /*   Estilos del contacto   */
 
 .contacto{
-    background-color: #FCEBEA;
+    background-color: $colorbase;
     background-image: none;
     height: 500px;
     width: 50%;
     padding: 60px;
-    color: #21274F;
+    color: $colorcontraste1;
     display: inline-block; 
+
+    ul{
+        list-style: none;
+        font-size: 18px;
+    }
+
+    li{
+        margin: 10px 0px;
+    }
 }
 
 .h5{
-    color: #21274F;
-}
-
-.contacto ul{
-    list-style: none;
-    font-size: 18px;
-}
-
-.contacto li{
-    margin: 10px 0px;
+    color: $colorcontraste1;
 }
 
 .formulario{
@@ -474,20 +482,20 @@ footer p{
     height: 500px;
     width: 50%;
     float: right;
-    color: #21274F;
-}
+    color: $colorcontraste1;
 
-.formulario p{
-    margin-bottom: 30px;
+    p{
+        margin-bottom: 30px;
+    }
+
+    .botones{
+        float: right;
+        padding-top: 15px;
+    }
 }
 
 .completo {
     width: 100%;
-}
-
-.formulario .botones {
-    float: right;
-    padding: 15px 0;
 }
 
 /*   Estilos del contacto   */
