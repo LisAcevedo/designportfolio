@@ -16,6 +16,7 @@
   color: white;
   letter-spacing: 3px;
   padding: 5px 15px;
+  font-family: Geneva, Tahoma, sans-serif;
 }
 
 .collapse {
@@ -42,7 +43,6 @@ h1 {
 
 h2 {
   color: #F5ACA6;
-  margin-bottom: 20px;
   font-size: 28px;
   word-spacing: 5px;
   font-weight: 500;
@@ -50,7 +50,6 @@ h2 {
 }
 
 h3 {
-  margin-bottom: 30px;
   font-size: 20px;
   text-align: center;
 }
@@ -366,71 +365,100 @@ footer p {
   .porttitle {
     width: 100%;
   }
+  .titleporta {
+    padding-top: 12%;
+  }
 }
 /*   Estilos del portafolio   */
 /*   Estilos del reel   */
 .reel {
   background-color: #FCEBEA;
-  height: 1000px;
-  width: 100%;
-  padding: 60px 0px;
   color: #21274F;
+  border: 2px solid #FCEBEA;
 }
 .reel h1 {
-  margin: 30px auto;
+  padding-top: 6%;
 }
 .reel h4 {
-  margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 2%;
 }
 .reel video {
-  margin: 0px 50px;
+  margin: 0 5%;
 }
 .reel p {
-  margin: 30px 100px;
+  padding: 2% 10%;
   text-align: justify;
 }
 
+@media (max-width: 576px) {
+  .reel h1 {
+    padding-top: 12%;
+  }
+}
 /*   Estilos del reel   */
 /*   Estilos del contacto   */
+.contenedorcontact {
+  display: flex;
+  flex-flow: row wrap;
+  border: 2px solid orange;
+}
+
 .contacto {
   background-color: #FCEBEA;
-  background-image: none;
-  height: 500px;
   width: 50%;
-  padding: 60px;
-  color: #21274F;
-  display: inline-block;
+  margin-top: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border: 2px solid red;
+}
+.contacto h2 {
+  width: 100%;
+  border: 2px solid pink;
+}
+.contacto h3 {
+  width: 100%;
+  border: 2px solid palevioletred;
 }
 .contacto ul {
   list-style: none;
   font-size: 18px;
+  border: 2px solid green;
 }
 .contacto li {
   margin: 10px 0px;
-}
-
-.h5 {
-  color: #21274F;
+  border: 2px solid blue;
 }
 
 .formulario {
-  padding: 60px;
-  height: 500px;
-  width: 50%;
-  float: right;
   color: #21274F;
+  width: 50%;
+  margin-top: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border: 2px solid brown;
 }
 .formulario p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 .formulario .botones {
-  float: right;
-  padding-top: 15px;
+  display: flex;
+  justify-content: end;
+  padding: 15px 0;
 }
 
 .completo {
   width: 100%;
 }
 
+@media (max-width: 576px) {
+  .contacto {
+    width: 100%;
+  }
+  .formulario {
+    width: 100%;
+  }
+}
 /*   Estilos del contacto   *//*# sourceMappingURL=estilos.css.map */
