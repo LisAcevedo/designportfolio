@@ -400,7 +400,7 @@ footer p {
 .contenedorcontact {
   display: flex;
   flex-flow: row wrap;
-  border: 2px solid orange;
+  border: 2px solid yellow;
 }
 
 .contacto {
