@@ -215,6 +215,11 @@ footer p {
   background-color: #21274F;
 }
 
+@media (max-width: 576px) {
+  footer p {
+    font-size: 10px;
+  }
+}
 /* Estilos de footer */
 /*   Estilos del resumen   */
 .resumen {
@@ -226,7 +231,7 @@ footer p {
   text-align: start;
   margin-top: 3%;
 }
-.resumen h4 {
+.resumen h3 {
   text-align: start;
   font-weight: 600;
   margin-top: 10px;
@@ -379,8 +384,10 @@ footer p {
 .reel h1 {
   padding-top: 6%;
 }
-.reel h4 {
+.reel h2 {
   margin-top: 2%;
+  color: #21274F;
+  font-size: 20px;
 }
 .reel video {
   margin: 0 5%;
@@ -400,7 +407,7 @@ footer p {
 .contenedorcontact {
   display: flex;
   flex-flow: row wrap;
-  border: 2px solid yellow;
+  align-items: start;
 }
 
 .contacto {
@@ -410,24 +417,20 @@ footer p {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  border: 2px solid red;
 }
 .contacto h2 {
   width: 100%;
-  border: 2px solid pink;
 }
 .contacto h3 {
   width: 100%;
-  border: 2px solid palevioletred;
+  margin: 1% 0 3% 0;
 }
 .contacto ul {
   list-style: none;
-  font-size: 18px;
-  border: 2px solid green;
+  font-size: 20px;
 }
 .contacto li {
   margin: 10px 0px;
-  border: 2px solid blue;
 }
 
 .formulario {
@@ -437,7 +440,6 @@ footer p {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  border: 2px solid brown;
 }
 .formulario p {
   margin-bottom: 20px;
