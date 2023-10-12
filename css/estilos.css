@@ -15,8 +15,9 @@
   border-radius: 16px;
   color: white;
   letter-spacing: 3px;
-  padding: 5px 15px;
-  font-family: Geneva, Tahoma, sans-serif;
+  padding: 2px 20px 8px 20px;
+  font-family: "Grandiflora One", cursive;
+  font-size: 25px;
 }
 
 .collapse {
@@ -39,6 +40,8 @@
 h1 {
   font-size: 40px;
   text-align: center;
+  font-family: "Glass Antiqua", cursive;
+  color: #21274F;
 }
 
 h2 {
@@ -61,7 +64,7 @@ h4 {
 }
 
 /*   Estilos generales   */
-/* Estilos del main */
+/* Estilos del home */
 .contenedorhome {
   display: flex;
   flex-flow: row wrap;
@@ -93,18 +96,33 @@ main {
   flex-flow: row wrap;
   width: 50%;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 5px;
+}
+.principaltext h1 {
+  width: 100%;
 }
 .principaltext h3 {
   width: 100%;
   text-align: center;
+  margin-bottom: 3%;
+}
+.principaltext .botonportafolio {
+  transform: scale(1);
+  transition: all 1s;
+  height: 40px;
+}
+.principaltext .botonportafolio:hover {
+  transform: scale(1.1);
 }
 .principaltext a {
   background-color: #21274F;
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 16px 24px 12px 24px;
+  border-radius: 14px;
+  font-family: "Englebert", cursive;
+  letter-spacing: 3px;
+  font-size: 18px;
 }
 .principaltext a:hover {
   color: #F4C0B8;
@@ -125,12 +143,29 @@ main {
     width: 100%;
   }
 }
-@media (max-width: 1000px) and (min-width: 575px) {
+@media (max-width: 1300px) and (min-width: 575px) {
   .principaltext {
     margin-top: 80px;
   }
 }
-/* Estilos del main */
+@media (max-width: 914px) and (min-width: 815px) {
+  .nav-link {
+    margin: 0px 10px;
+  }
+}
+@media (max-width: 814px) and (min-width: 726px) {
+  .nav-link {
+    font-size: 18px;
+    margin: 0px 5px;
+  }
+}
+@media (max-width: 725px) and (min-width: 575px) {
+  .nav-link {
+    font-size: 14px;
+    margin: 0px 3px;
+  }
+}
+/* Estilos del home */
 /* Estilos de habilidades y perfil */
 .contenedorskills {
   display: flex;
@@ -152,6 +187,11 @@ main {
 }
 .skills img {
   padding: 8px;
+  transform: rotateX(5deg);
+  transition: all 2s;
+}
+.skills img:hover {
+  transform: rotateX(180deg);
 }
 
 .skillsicons {
@@ -180,6 +220,8 @@ main {
   font-size: 18px;
   width: 100%;
   text-align: center;
+  color: #21274F;
+  margin: 3px 0;
 }
 
 @media screen and (max-width: 576px) {
@@ -222,9 +264,12 @@ footer p {
 }
 /* Estilos de footer */
 /*   Estilos del resumen   */
+main {
+  margin-top: 1%;
+}
+
 .resumen {
   background-color: #FCEBEA;
-  padding-top: 5%;
   color: #21274F;
 }
 .resumen h2 {
@@ -265,6 +310,48 @@ footer p {
   margin-bottom: 40px;
 }
 
+.perfilresumen {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.perfilresumen h4 {
+  width: 100%;
+  margin: 10px 0;
+}
+.perfilresumen p {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  color: #21274F;
+  margin: 3px 0;
+}
+
+.accordion-button {
+  color: #21274F;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.accordion-body {
+  background-color: #FCEBEA;
+  color: #21274F;
+  width: 100%;
+  text-align: left;
+}
+.accordion-body h3 {
+  text-align: left;
+}
+
+@media (max-width: 1100px) and (min-width: 700px) {
+  .titleporta {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 699px) and (min-width: 575px) {
+  .titleporta {
+    margin-top: 40px;
+  }
+}
 /*   Estilos del resumen   */
 /*   Estilos del portafolio   */
 .titleporta {
@@ -275,12 +362,14 @@ footer p {
   display: flex;
   flex-flow: row wrap;
   background-color: #FCEBEA;
+  color: #21274F;
 }
 
 .contenedorportfoliob {
   display: flex;
   flex-flow: row-reverse wrap;
   background-color: #FCEBEA;
+  color: #21274F;
 }
 
 .contenedorportfolioprueba {
@@ -374,6 +463,41 @@ footer p {
     padding-top: 12%;
   }
 }
+.contenedorgridleft {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: column;
+  border: 2px solid yellow;
+}
+
+.contenedortitlegrid {
+  border: 2px solid orange;
+}
+
+.contenedortextgrid {
+  border: 2px solid brown;
+}
+
+.contenedorimggrid {
+  border: 2px solid magenta;
+  grid-row: span 2/span 2;
+}
+
+@media screen and (max-width: 576px) {
+  .contenedorgridleft {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-auto-flow: row;
+  }
+  .contenedortitlegrid {
+    order: 1;
+  }
+  .contenedorimggrid {
+    order: 2;
+  }
+  .contenedortextgrid {
+    order: 3;
+  }
+}
 /*   Estilos del portafolio   */
 /*   Estilos del reel   */
 .reel {
@@ -412,6 +536,7 @@ footer p {
 
 .contacto {
   background-color: #FCEBEA;
+  color: #21274F;
   width: 50%;
   margin-top: 2%;
   display: flex;

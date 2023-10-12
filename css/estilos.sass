@@ -1,4 +1,12 @@
-// Paleta de colores //
+// font-family: 'Englebert', cursive //
+// font-family: 'Glass Antiqua', cursive //
+// font-family: 'Grandiflora One', cursive //
+// font-family: 'Quicksand', sans-serif //
+// font-family: 'Ranga', cursive //
+// font-family: 'Zen Loop', cursive //
+
+
+// Paleta de colores SASS//
 $colorbase: #FCEBEA
 $colorenfocus1: #F4C0B8
 $colorcontraste1: #21274F
@@ -6,7 +14,7 @@ $colorcontraste2: white
 $colorcontraste3: #F5ACA6
 // Paleta de colores //
 
-// Tipografías //
+// Tipografías SASS //
 $fontprincipal: 'Quicksand', sans-serif
 // Tipografías //
 
@@ -29,8 +37,9 @@ $fontprincipal: 'Quicksand', sans-serif
     border-radius: 16px
     color: $colorcontraste2
     letter-spacing: 3px
-    padding: 5px 15px
-    font-family: Geneva, Tahoma, sans-serif
+    padding: 2px 20px 8px 20px
+    font-family: 'Grandiflora One', cursive
+    font-size: 25px
 
 
 .collapse
@@ -55,6 +64,8 @@ $fontprincipal: 'Quicksand', sans-serif
 h1
     font-size: 40px
     text-align: center
+    font-family: 'Glass Antiqua', cursive
+    color: $colorcontraste1
 
 
 h2
@@ -78,7 +89,7 @@ h4
 
 /*   Estilos generales   */
 
-/* Estilos del main */
+/* Estilos del home */
 
 .contenedorhome
     display: flex
@@ -113,17 +124,35 @@ main
     justify-content: center
     margin-top: 5%
 
+    h1
+        width: 100%
+    
+
     h3
         width: 100%
         text-align: center
+        margin-bottom: 3%
     
     
+    .botonportafolio
+        transform: scale(1.0)
+        transition: all 1s
+        height: 40px
+    
+
+    .botonportafolio:hover
+        transform: scale(1.1)
+    
+
     a
         background-color: $colorcontraste1
         color: $colorcontraste2
         text-decoration: none
-        padding: 10px 20px
-        border-radius: 10px
+        padding: 16px 24px 12px 24px
+        border-radius: 14px
+        font-family: 'Englebert', cursive
+        letter-spacing: 3px
+        font-size: 18px
     
 
     a:hover
@@ -148,13 +177,33 @@ main
     
 
 
-@media (max-width: 1000px) and (min-width: 575px) 
+@media (max-width: 1300px) and (min-width: 575px) 
     .principaltext
         margin-top: 80px
     
 
 
-/* Estilos del main */
+@media (max-width: 914px) and (min-width: 815px) 
+    .nav-link
+        margin: 0px 10px
+    
+
+
+@media (max-width: 814px) and (min-width: 726px) 
+    .nav-link
+        font-size: 18px
+        margin: 0px 5px
+    
+
+
+@media (max-width: 725px) and (min-width: 575px) 
+    .nav-link
+        font-size: 14px
+        margin: 0px 3px
+    
+
+
+/* Estilos del home */
 
 /* Estilos de habilidades y perfil */
 
@@ -180,6 +229,12 @@ main
 
     img
         padding: 8px
+        transform: rotateX(5deg)
+        transition: all 2s
+    
+
+    img:hover
+        transform: rotateX(180deg)
     
 
 
@@ -213,6 +268,8 @@ main
         font-size: 18px
         width: 100%
         text-align: center
+        color: $colorcontraste1
+        margin: 3px 0
     
 
 
@@ -257,6 +314,7 @@ footer
 @media (max-width: 576px) 
     footer p
         font-size: 10px
+      
 
 
 /* Estilos de footer */
@@ -323,12 +381,14 @@ footer
     display: flex
     flex-flow: row wrap
     background-color: $colorbase
+    color: $colorcontraste1
 
 
 .contenedorportfoliob
     display: flex
     flex-flow: row-reverse wrap
     background-color: $colorbase
+    color: $colorcontraste1
 
 
 .contenedorportfolioprueba
@@ -474,6 +534,7 @@ footer
 
 .contacto
     background-color: $colorbase
+    color: $colorcontraste1
     width: 50%
     margin-top: 2%
     display: flex
