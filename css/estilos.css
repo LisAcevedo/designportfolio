@@ -245,6 +245,9 @@ footer p {
   display: inline-block;
   background-color: #21274F;
 }
+footer a {
+  color: white;
+}
 
 .redes {
   color: white;
@@ -308,6 +311,13 @@ main {
 
 .botdescarga {
   margin-bottom: 40px;
+  transform: scale(1);
+  transition: all 1s;
+  height: 40px;
+}
+
+.botdescarga:hover {
+  transform: scale(1.1);
 }
 
 .perfilresumen {
@@ -330,6 +340,7 @@ main {
   color: #21274F;
   font-weight: 800;
   font-size: 18px;
+  background-color: #F4C0B8;
 }
 
 .accordion-body {
@@ -356,42 +367,6 @@ main {
 /*   Estilos del portafolio   */
 .titleporta {
   padding-top: 6%;
-}
-
-.contenedorportfolioa {
-  display: flex;
-  flex-flow: row wrap;
-  background-color: #FCEBEA;
-  color: #21274F;
-}
-
-.contenedorportfoliob {
-  display: flex;
-  flex-flow: row-reverse wrap;
-  background-color: #FCEBEA;
-  color: #21274F;
-}
-
-.contenedorportfolioprueba {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.porttitle {
-  width: 50%;
-  padding: 2% 5% 0 5%;
-  height: 100px;
-}
-
-.porttext {
-  width: 50%;
-  padding: 2% 5%;
-}
-.porttext p {
-  text-align: justify;
-}
-.porttext a:hover {
-  color: #F4C0B8;
 }
 
 .portbotleft {
@@ -422,32 +397,35 @@ main {
   margin: 0px 5px;
 }
 
-.portimgright {
-  width: 50%;
-  padding: 2% 0;
-  display: flex;
-  justify-content: flex-start;
+.contenedorgridleft {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: column;
 }
 
-.portimgleft {
-  width: 50%;
-  padding: 2% 0;
-  display: flex;
-  justify-content: flex-end;
+.contenedortitlegrid {
+  margin-top: 40px;
+  height: 80px;
+}
+.contenedortitlegrid h2 {
+  font-family: "Glass Antiqua", cursive;
+}
+
+.contenedortextgrid {
+  margin-bottom: 20px;
+  padding: 0 40px;
+  text-align: justify;
+}
+
+.contenedorimggrid {
+  grid-row: span 2/span 2;
+}
+
+.imagen {
+  width: 100%;
 }
 
 @media (max-width: 576px) {
-  .porttext {
-    width: 100%;
-  }
-  .portimgleft {
-    width: 100%;
-    justify-content: center;
-  }
-  .portimgright {
-    width: 100%;
-    justify-content: center;
-  }
   .portbotleft {
     display: flex;
     justify-content: center;
@@ -456,33 +434,10 @@ main {
     display: flex;
     justify-content: center;
   }
-  .porttitle {
-    width: 100%;
-  }
   .titleporta {
     padding-top: 12%;
   }
 }
-.contenedorgridleft {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-flow: column;
-  border: 2px solid yellow;
-}
-
-.contenedortitlegrid {
-  border: 2px solid orange;
-}
-
-.contenedortextgrid {
-  border: 2px solid brown;
-}
-
-.contenedorimggrid {
-  border: 2px solid magenta;
-  grid-row: span 2/span 2;
-}
-
 @media screen and (max-width: 576px) {
   .contenedorgridleft {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -495,6 +450,45 @@ main {
     order: 2;
   }
   .contenedortextgrid {
+    order: 3;
+  }
+}
+.contenedorgridright {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: column;
+}
+
+.contenedortitlegridr {
+  margin-top: 40px;
+  height: 80px;
+}
+.contenedortitlegridr h2 {
+  font-family: "Glass Antiqua", cursive;
+}
+
+.contenedortextgridr {
+  margin-bottom: 20px;
+  padding: 0 40px;
+  text-align: justify;
+}
+
+.contenedorimggridr {
+  grid-row: span 2/span 2;
+}
+
+@media screen and (max-width: 576px) {
+  .contenedorgridright {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-auto-flow: row;
+  }
+  .contenedortitlegridr {
+    order: 1;
+  }
+  .contenedorimggridr {
+    order: 2;
+  }
+  .contenedortextgridr {
     order: 3;
   }
 }
