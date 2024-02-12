@@ -28,7 +28,7 @@
     <!-- BS tabnav inicio -->
     <nav class="navbar fixed-top navbar-expand-sm">
       <div class="container-fluid">
-        <a class="navbar-brand" href="..//index.html">Lis Acevedo</a>
+        <a class="navbar-brand" href="/">Lis Acevedo</a>
         <button
           class="navbar-toggler navbar-dark"
           type="button"
@@ -40,16 +40,16 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="..//index.html">Sobre mí</a>
+              <a class="nav-link" href="/">Sobre mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="resumen.html">Resumen</a>
+              <a class="nav-link" href="./resumen.html">Resumen</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portafolio.html">Portafolio</a>
+              <a class="nav-link" href="./portafolio.html">Portafolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html"><b>Contacto</b></a>
+              <a class="nav-link" href="./contacto.html"><b>Contacto</b></a>
             </li>
           </ul>
         </div>
@@ -66,21 +66,21 @@
           <h3><strong>Diseñadora y comunicadora visual</strong></h3>
           <ul>
             <li><i class="fa-solid fa-square-envelope"></i> <a href="mailto:lis.acevedo02@gmail.com">lis.acevedo02@gmail.com</a></li>
-            <li><i class="fa-brands fa-square-whatsapp"></i><a href="https://wa.me/+525573389540" target="_blank">+52 55 7338 9540</a></li>
-            <li><i class="fa-brands fa-square-behance"></i> www.behance.com/</li>
-            <li><i class="fa-brands fa-linkedin"></i> www.linkedin.com/in/lisset-acevedo</li>
+            <li><i class="fa-brands fa-square-whatsapp"></i><a href="https://wa.me/+525573389540" target="_blank">+5255 7338 9540</a></li>
+            <li><i class="fa-brands fa-square-behance"></i><a href="https://www.behance.net/lissetacevedo" target="_blank">www.behance.net/lissetacevedo</a></li>
+            <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/lisset-acevedo/" target="_blank">www.linkedin.com/in/lisset-acevedo</a></li>
           </ul>
         </div>
         <div class="formulario">
           <p>Si lo prefieres, deja tus datos y me comunicaré contigo.</p>
-          <form action="">
+          <form action="mailto:lis.acevedo02@gmail.com" method="post" enctype="text/plain">
             <div>
               <label for="Name">Nombre</label>
-              <input type="text" name="Name" id="Name" class="completo" />
+              <input type="text" name="Name" id="Name" required class="completo" />
             </div>
             <div>
               <label for="Email">Correo electrónico</label>
-              <input type="email" name="Email" id="Email" class="completo" />
+              <input type="email" name="Email" id="Email" required class="completo" />
             </div>
             <div>
               <label for="Message">Mensaje</label>
@@ -90,11 +90,11 @@
                 cols="30"
                 rows="10"
                 class="completo"
+                required
               ></textarea>
             </div>
             <div class="botones">
-              <button class="boton1">Cancelar</button>
-              <button class="boton2">Enviar</button>
+              <input type="submit" name="Enviar" value="Enviar" class="boton2"/>
             </div>
           </form>
         </div>
@@ -105,7 +105,7 @@
       <div class="redes">
         <a href="mailto:lis.acevedo02@gmail.com"><i class="fa-regular fa-envelope"></i></a>
         <a href="https://www.linkedin.com/in/lisset-acevedo" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://www.behance.net/"><i class="fa-brands fa-behance"></i></a>
+        <a href="https://www.behance.net/lissetacevedo" target="_blank"><i class="fa-brands fa-behance"></i></a>
     </div>
     </footer>
 
